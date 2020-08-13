@@ -10,17 +10,17 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
 
 # 1. Configuração da máquina
 
- * Verifique os [Requisitos Mínimos](https://)
+ * Verifique os [Requisitos Mínimos](https://github.com/edsongs/instal-mapas/tree/master/draft/Requisitos%20m%C3%ADnimos#instala%C3%A7%C3%A3o-mapas-culturais---requisitos-m%C3%ADnimos)
 
 # 2. Softwares Requeridos
 
   #### Atualize os repositórios de referência de sua máquina:
   
   ```
-  ubuntu@server$ sudo apt-get update 
+  ubuntu@server$ sudo apt-get update -y
   ```
   ```
-  ubuntu@server$ sudo apt-get upgrade
+  ubuntu@server$ sudo apt-get upgrade -y
   ```
   
   #### Instale as dependências diversas:
