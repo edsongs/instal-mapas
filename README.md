@@ -86,7 +86,7 @@ Este manual é pensado em concentrar todos os documentos necessários para a adm
 		1. [Certificado](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Manual%20Ubuntu%2018.04%20e%2020.04#instala%C3%A7%C3%A3o-do-certificado-ssl-com-letsencrypt )
 	3. [Plugins](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_config_plugins.md )
 		1. [Mailer](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_config_plugins.md#mailer )
-		2. [Autenticação](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Manual%20Ubuntu%2018.04%20e%2020.04#autentica%C3%A7%C3%A3o---multiplelocalauth )
+		2. [Autenticação](https://github.com/edsongs/instal-mapas/configura%C3%A7%C3%B5es )
 			1. Google
 			2. Facebook
 			3. Twitter
