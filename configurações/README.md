@@ -92,6 +92,20 @@ Para habilitar o novo plugin que implementa as funcionalidades de **login e regi
 
     A razão para que isto aconteça é identica à do item anterior: as configurações utilizadas tem sua origem **sempre** no arquivo e não na consulta às tabelas "subsite" e "subsite_metadata".
     Não há correção conhecida/reportada.
+   
+5. **Erro no envio ao utilizar SMTP-Relay**
+
+    Caso esteja sendo utilizado um SMTP-Relay, na configuração dentro da sessão Mailer, a definição de protocolo deve ser deixada em branco, porém isto causará erro, pois quando o protocolo não é definido, o default é o "SSL" e aí está a causa do erro. Para corrigir, faça a seguinte alteração.
+    
+    DE:
+    ```
+    // default encryption protocol to ssl
+        $protocol = isset($this->_config['mailer.protocol']) &&  !empty($this->_config['mailer.protocol']) ? $this->_config['mailer.protocol'] : 'ssl';
+    ```
+    PARA:
+    ```
+        $protocol = isset($this->_config['mailer.protocol']) &&  !empty($this->_config['mailer.protocol']) ? $this->_config['mailer.protocol'] : null;
+    ```
 
 [Voltar para o sumário](https://github.com/edsongs/instal-mapas)
   
