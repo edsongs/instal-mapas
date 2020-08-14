@@ -70,15 +70,28 @@ Para habilitar o novo plugin que implementa as funcionalidades de **login e regi
     > **_~/mapasculturais/plugin/MultipleLocalAuth/views/auth_**
 
 # Known Issues
-1. Caso as regras de segurança de senha não seja apresentado:
+1. **Regras de segurança de senha não aparecem**
+
+    Este problema está relacionado com a incompatibilidade entre definições nos assets e a versão do Uglify em uso. O Uglify não mais reconhece alguns comandos presentes em páginas mais 'antigas' dos assets. A correção passa pelo desligamento da _compilação_ dos assets pelo Uglify.
     ```
     user@server:~/$ sudo vi ~/mapasculturais/src/protected/application/conf/conf-base.d/assets-manager.php
     ```
     >     // Na linha 3, mude para _false_:
     >     $is_production=false
     
+2. **Definição da estratégia de login TWITTER**
+
+    Na configuração, a estratégia TWITTER **deve** estar presente, mesmo que com valores _dummy_; ela não influencia na execução, mas quebra se retirada.
+
+3. **Mensagem de erro do reCAPTCHA** ou **reCAPTCHA não funciona em Subsites**
+
+    Quando em um subsite criado numa plataforma que tem o plugin de autenticação habilitado, o reCAPTCHA apresenta uma mensagem de erro, informando que as chaves do serviço não são válidas para o endereço do site. Isto acontece porque o plugin buscas suas configurações no arquivo de configuração e não identifica que, se em subsite, deve recuperar os valores dos parâmetros das tabelas "subsite" e "subsite_metadata".
+    Não há correção conhecida/reportada.
     
-2. Na configuração, não elimine a estratégia TWITTER; ela não influencia na execução, mas quebra se retirada.
+4. **eMail enviado da mesma origem em toda a plataforma** ou **Não consigo definir conta de envio de e-mail para Subsites"**
+
+    A razão para que isto aconteça é identica à do item anterior: as configurações utilizadas tem sua origem **sempre** no arquivo e não na consulta às tabelas "subsite" e "subsite_metadata".
+    Não há correção conhecida/reportada.
 
 [Voltar para o sumário](https://github.com/edsongs/instal-mapas)
   
