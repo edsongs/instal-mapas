@@ -44,11 +44,11 @@ Este manual é pensado em concentrar todos os documentos necessários para a adm
 2. [Instalação do Ambiente](https://github.com/edsongs/instal-mapas/blob/master/Instalação.md)
 	1. Ubuntu/Debian
 		1. Deploy
-			* [Instalação Manual](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Manual%20Ubuntu%2018.04%20e%2020.04)
-			* [Instalação com Docker](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Docker%20Ubuntu%2018.04%20e%2020.04)
+			* [Instalação Manual](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instalacao%20Manual%20Ubuntu%2018.04%20e%2020.04)
+			* [Instalação com Docker](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instalacao%20Docker%20Ubuntu%2018.04%20e%2020.04)
 		2. Desevolvimento
-			* [Instalação Manual](https://github.com/edsongs/instal-mapas/tree/master/draft/Desenvolvimento/Instala%C3%A7%C3%A3o%20Manual%20Ubuntu%2018.04%20e%2020.04)
-			* [Instalação com Docker](https://github.com/edsongs/instal-mapas/tree/master/draft/Desenvolvimento/Instala%C3%A7%C3%A3o%20Docker%20Ubuntu%2018.04%20e%2020.04)
+			* [Instalação Manual](https://github.com/edsongs/instal-mapas/tree/master/draft/Desenvolvimento/Instalacao%20Manual%20Ubuntu%2018.04%20e%2020.04)
+			* [Instalação com Docker](https://github.com/edsongs/instal-mapas/tree/master/draft/Desenvolvimento/Instalacao%20Docker%20Ubuntu%2018.04%20e%2020.04)
 	2. Fedora/Centos
 		1. Deploy
 			* Instalação Manual
