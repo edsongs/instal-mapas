@@ -47,24 +47,24 @@ Para habilitar o novo plugin que implementa as funcionalidades de **login e regi
     >      # diretório de plugin
     >     - ../plugin/MultipleLocalAuth:/var/www/html/protected/application/plugins/MultipleLocalAuth
     
-    Ou use [este](https://github.com/edsongs/instal-mapas/configura%C3%A7%C3%B5es/docker-compose.local.yml) arquivo já comentado de definições.
+    Ou use [este](https://github.com/edsongs/instal-mapas/configuracoes/docker-compose.local.yml) arquivo já comentado de definições.
 
 7. Mude para o diretório de configurações "expostas" e inclua os arquivos de configuração usando o comando:
     ```
     user@server:~/mapasculturais/dev-scripts$ cd ../compose
-    user@server:~/mapasculturais/compose/$ sudo git clone https://github.com/edsongs/instal-mapas/configura%C3%A7%C3%B5es/config.d
+    user@server:~/mapasculturais/compose/$ sudo git clone https://github.com/edsongs/instal-mapas/configuracoes/config.d
     ```
 
 8. Altere as configurações conforme necessário:
-   - Para alterar o nome do site e sua descrição, altere o arquivo "[0-base.php](https://github.com/edsongs/instal-mapas/blob/master/configura%C3%A7%C3%B5es/config.d/0-base.php)";
-   - Para habilitar a facilidade de denuncias e encaminhamento de sugestões, altere o arquivo "[1-denuncia_sugestao.php](https://github.com/edsongs/instal-mapas/blob/master/configura%C3%A7%C3%B5es/config.d/1-denuncia_sugestao.php)";
-   - Para alterar as configurações do banco de dados, altereo arquivo "[2-doctrine.php](https://github.com/edsongs/instal-mapas/blob/master/configura%C3%A7%C3%B5es/config.d/2-doctrine.php)";
-   - Para habilitar e alterar as configurações de log da aplicação, altere o arquivo "[3-LOGs.php](https://github.com/edsongs/instal-mapas/blob/master/configura%C3%A7%C3%B5es/config.d/3-LOGs.php)";
-   - Para alterar o mapa apresentado nas consultas, altere o arquivo "[4-GPS.php](https://github.com/edsongs/instal-mapas/blob/master/configura%C3%A7%C3%B5es/config.d/4-GPS.php)";
-   - Para registrar os plugins habilitados no sistema, altere o arquivo "[5-plugin_en.php](https://github.com/edsongs/instal-mapas/blob/master/configura%C3%A7%C3%B5es/config.d/5-plugin_en.php)";
-   - Para que a funcionalidade de e-mail funcione, altere o arquivo "[6-mailer.php](https://github.com/edsongs/instal-mapas/blob/master/configura%C3%A7%C3%B5es/config.d/6-mailer.php)";
-   - Para que a habilitar o login local, os baseados em serviços, incluir sua chave de Captcha e definir as estratégias de senha, altere o arquivo "[8-authentication.php](https://github.com/edsongs/instal-mapas/blob/master/configura%C3%A7%C3%B5es/config.d/8-authentication.php)";
-   - Para habilitar a funcionalidade de **reCAPTCHA** siga [estas instruções](https://docs.wpusermanager.com/article/147-generate-recaptcha-api-keys) e, com as chaves anotadas, altere os parâmetros no arquivo "[8-authentication.php](https://github.com/edsongs/instal-mapas/blob/master/configura%C3%A7%C3%B5es/config.d/8-authentication.php)".
+   - Para alterar o nome do site e sua descrição, altere o arquivo "[0-base.php](https://github.com/edsongs/instal-mapas/blob/master/configuracoes/config.d/0-base.php)";
+   - Para habilitar a facilidade de denuncias e encaminhamento de sugestões, altere o arquivo "[1-denuncia_sugestao.php](https://github.com/edsongs/instal-mapas/blob/master/configuracoes/config.d/1-denuncia_sugestao.php)";
+   - Para alterar as configurações do banco de dados, altereo arquivo "[2-doctrine.php](https://github.com/edsongs/instal-mapas/blob/master/configuracoes/config.d/2-doctrine.php)";
+   - Para habilitar e alterar as configurações de log da aplicação, altere o arquivo "[3-LOGs.php](https://github.com/edsongs/instal-mapas/blob/master/configuracoes/config.d/3-LOGs.php)";
+   - Para alterar o mapa apresentado nas consultas, altere o arquivo "[4-GPS.php](https://github.com/edsongs/instal-mapas/blob/master/configuracoes/config.d/4-GPS.php)";
+   - Para registrar os plugins habilitados no sistema, altere o arquivo "[5-plugin_en.php](https://github.com/edsongs/instal-mapas/blob/master/configuracoes/config.d/5-plugin_en.php)";
+   - Para que a funcionalidade de e-mail funcione, altere o arquivo "[6-mailer.php](https://github.com/edsongs/instal-mapas/blob/master/configuracoes/config.d/6-mailer.php)";
+   - Para que a habilitar o login local, os baseados em serviços, incluir sua chave de Captcha e definir as estratégias de senha, altere o arquivo "[8-authentication.php](https://github.com/edsongs/instal-mapas/blob/master/configuracoes/config.d/8-authentication.php)";
+   - Para habilitar a funcionalidade de **reCAPTCHA** siga [estas instruções](https://docs.wpusermanager.com/article/147-generate-recaptcha-api-keys) e, com as chaves anotadas, altere os parâmetros no arquivo "[8-authentication.php](https://github.com/edsongs/instal-mapas/blob/master/configuracoes/config.d/8-authentication.php)".
    
 9. Ajustes, mudanças e/ou substituições nos/dos **textos enviados por e-mail**, quando do registro de novo usuário do Mapas, assim como no/do **termos e condições de uso** podem ser feitas alterando-se os arquivos que estão no diretório:
     > **_~/mapasculturais/plugin/MultipleLocalAuth/views/auth_**
@@ -86,7 +86,7 @@ Para habilitar o novo plugin que implementa as funcionalidades de **login e regi
 3. **Mensagem de erro do reCAPTCHA** ou **reCAPTCHA não funciona em Subsites**
 
     Quando em um subsite criado numa plataforma que tem o plugin de autenticação habilitado, o reCAPTCHA apresenta uma mensagem de erro, informando que as chaves do serviço não são válidas para o endereço do site. Isto acontece porque o plugin buscas suas configurações no arquivo de configuração e não identifica que, se em subsite, deve recuperar os valores dos parâmetros das tabelas "subsite" e "subsite_metadata".
-    Não há correção conhecida/reportada.
+    O work-aroud é incluir/redefinir na configuração da chave do reCAPTCHA lista de todos os sites onde deverá ser válida.
     
 4. **eMail enviado da mesma origem em toda a plataforma** ou **Não consigo definir conta de envio de e-mail para Subsites"**
 
