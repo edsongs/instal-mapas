@@ -40,8 +40,8 @@ Este manual é pensado em concentrar todos os documentos necessários para corre
 ## Manual do Administrador
 Este manual é pensado em concentrar todos os documentos necessários para a administração da plataforma [Mapas Culturais](http://github.com/mapasculturais).
 
-1. [Requisitos de sistema](https://github.com/edsongs/instal-mapas/tree/master/draft/Requisitos%20m%C3%ADnimos).
-2. [Instalação do Ambiente](https://github.com/edsongs/instal-mapas/blob/master/Instalação.md)
+1. [Requisitos de sistema](https://github.com/edsongs/instal-mapas/tree/master/draft/Requisitos%20minimos).
+2. [Instalação do Ambiente](https://github.com/edsongs/instal-mapas/blob/master/Instalacao.md)
 	1. Ubuntu/Debian
 		1. Deploy
 			* [Instalação Manual](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instalacao%20Manual%20Ubuntu%2018.04%20e%2020.04)
@@ -70,8 +70,8 @@ Este manual é pensado em concentrar todos os documentos necessários para a adm
 )
 
 5. [Perfil de Usuário](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_user_profile.md)
-	1. [Super Administrador SaaS](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_deploy.md#8-p%C3%B3s-instala%C3%A7%C3%A3o--criando-super-admin)
-	2. [Administrador SaaS](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_deploy.md#8-p%C3%B3s-instala%C3%A7%C3%A3o--criando-super-admin)
+	1. [Super Administrador SaaS](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_deploy.md#8-p%C3%B3s-instalacao--criando-super-admin)
+	2. [Administrador SaaS](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_deploy.md#8-p%C3%B3s-instalacao--criando-super-admin)
 	3. Administrador
 	4. Usuário
 
@@ -83,10 +83,10 @@ Este manual é pensado em concentrar todos os documentos necessários para a adm
 		4. Tema
 			1. Imagens
 	2. Segurança
-		1. [Certificado](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instala%C3%A7%C3%A3o%20Manual%20Ubuntu%2018.04%20e%2020.04#instala%C3%A7%C3%A3o-do-certificado-ssl-com-letsencrypt )
+		1. [Certificado](https://github.com/edsongs/instal-mapas/tree/master/draft/Deploy/Instalacao%20Manual%20Ubuntu%2018.04%20e%2020.04#instalacao-do-certificado-ssl-com-letsencrypt )
 	3. [Plugins](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_config_plugins.md )
 		1. [Mailer](https://github.com/mapasculturais/mapasculturais/blob/develop/documentation/docs/mc_config_plugins.md#mailer )
-		2. [Autenticação](https://github.com/edsongs/instal-mapas/blob/master/configura%C3%A7%C3%B5es/README.md#instala%C3%A7%C3%A3o-do-plugin-de-registro-login-e-recupera%C3%A7%C3%A3o-de-senha )
+		2. [Autenticação](https://github.com/edsongs/instal-mapas/blob/master/configuracoes/README.md#instalacao-do-plugin-de-registro-login-e-recuperacao-de-senha )
 			1. Google
 			2. Facebook
 			3. Twitter
