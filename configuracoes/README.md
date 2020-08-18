@@ -95,7 +95,7 @@ Para habilitar o novo plugin que implementa as funcionalidades de **login e regi
    
 5. **Erro no envio ao utilizar SMTP-Relay**
 
-    Caso esteja sendo utilizado um SMTP-Relay, na configuração dentro da sessão Mailer, a definição de protocolo deve ser deixada em branco, porém isto causará erro, pois quando o protocolo não é definido, o default é o "SSL" e aí está a causa do erro. Para corrigir, faça a seguinte alteração.
+    Caso esteja sendo utilizado um SMTP-Relay, na configuração dentro da sessão Mailer, a definição de protocolo deve ser deixada em branco, porém isto causará erro, pois quando o protocolo não é definido, o default é o "SSL" e aí está a causa do erro. Para corrigir, acesse o arquivo **src/protected/application/lib/MapasCulturais/App.php** faça a seguinte alteração próximo à linha 2677:
     
     DE:
     ```
