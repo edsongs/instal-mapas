@@ -380,6 +380,10 @@ _A partir deste momento sua aplicação estará disponível para acesso utilizan
   ```
   ubuntu@server$ sudo apt-get install python-certbot-nginx
   ```
+  _Ubuntu20.04_
+  ```
+  ubuntu@server$ sudo apt install certbot python3-certbot-nginx -y
+  ```
   
   ### Passo 2 — Confirmando a Configuração do Nginx
   
@@ -449,13 +453,7 @@ _A partir deste momento sua aplicação estará disponível para acesso utilizan
   ```
   ubuntu@server$ sudo certbot renew --dry-run
   ```
-  _Ubuntu20.04_
   
-  ### Etapa 1 — Instalando o Certbot
-  
-  ```
-  ubuntu@server$ sudo apt install certbot python3-certbot-nginx -y
-  ```
   
   
 _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor inteiro para que o NGINX funcione corretamente. A configuração do SSL foi feita com base no seguinte [artigo](https://www.digitalocean.com/community/tutorials/como-proteger-o-nginx-com-o-let-s-encrypt-no-ubuntu-18-04-pt)._
