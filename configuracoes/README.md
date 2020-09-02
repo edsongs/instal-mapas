@@ -14,7 +14,7 @@ Para habilitar o novo plugin que implementa as funcionalidades de **login e regi
 2. Preparando o código fonte da plataforma
     1. Clonar o _branch_ 5.0.0 do repositório Mapasculturais 
         ```
-        user@server:~$ sudo git clone --branch release/v5.0.0 https://github.com/mapasculturais/mapasculturais.git
+        user@server:~$ sudo git clone --branch develop https://github.com/mapasculturais/mapasculturais.git
         ```
         Continue no passo 3
      2. Atualizar o código da plataforma
@@ -35,7 +35,7 @@ Para habilitar o novo plugin que implementa as funcionalidades de **login e regi
 
 5. Baixar a última versão do plugin do repositório do Ceará:
     ```
-    user@server:~/mapasculturais/plugin$ sudo git clone https://github.com/govce/MultipleLocalAuth.git
+    user@server:~/mapasculturais/plugin$ sudo git clone --branch develop https://github.com/mapasculturais/MultipleLocalAuth.git
     ```
 
 6. Atualizar o arquivo de definição do Docker incluindo as seguintes definições de volumes:
