@@ -35,7 +35,7 @@ Para habilitar o novo plugin que implementa as funcionalidades de **login e regi
 
 5. Baixar a última versão do plugin do repositório do Ceará:
     ```
-    user@server:~/mapasculturais/plugin$ sudo git clone --branch develop https://github.com/mapasculturais/MultipleLocalAuth.git
+    user@server:~/mapasculturais/plugin$ sudo git clone --branch develop https://github.com/mapasculturais/plugin-MultipleLocalAuth.git MultipleLocalAuth
     ```
 
 6. Atualizar o arquivo de definição do Docker incluindo as seguintes definições de volumes:
