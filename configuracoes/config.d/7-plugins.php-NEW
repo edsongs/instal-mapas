@@ -15,7 +15,7 @@ return [
                 'logotipo_central'                 => env('AB_LOGOTIPO_CENTRAL',''),            // nome do arquivo da imagem
                 'logotipo_instituicao'             => env('AB_LOGOTIPO_INSTITUICAO',''),        // nome do arquivo de imagem
 //              'link_suporte'                     => env('AB_LINK_SUPORTE',null),              // link
-                'link_suporte'                     => env('AB_LINK_SUPORTE',http://www.google.com),              // link
+                'link_suporte'                     => env('AB_LINK_SUPORTE','http://www.google.com'),              // link
                 'privacidade_termos_condicoes'     => env('AB_PRIVACIDADE_TERMOS',null),        // nome do arquivo
                 'inciso1_enabled'                  => env('AB_INCISO1_ENABLE',false),
                 'inciso2_enabled'                  => env('AB_INCISO2_ENABLE',false),
