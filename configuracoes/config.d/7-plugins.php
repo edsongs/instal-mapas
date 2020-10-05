@@ -11,7 +11,7 @@ return [
         'AldirBlanc' => [
             'namespace' => 'AldirBlanc',
             'config' => [
-                    'project_id'                       => 1,                                        // vinculado ao projeto pai
+                    'project_id'                       => <id_projeto_pai>,                         // projeto pai da LAB
                     'logotipo_central'                 => env('AB_LOGOTIPO_CENTRAL',''),            // caminho URL do arquivo da imagem
                     'logotipo_instituicao'             => env('AB_LOGOTIPO_INSTITUICAO',''),        // caminho URL do arquivo de imagem
 //                  'link_suporte'                     => env('AB_LINK_SUPORTE',null),              // link para a página de suporte
@@ -21,7 +21,7 @@ return [
                     'inciso2_enabled'                  => env('AB_INCISO2_ENABLE',false),
                     'msg_inciso1_disabled'             => env('AB_INCISO1_DISABLE_MESSAGE','Em breve. Aguarde!'),
                     'msg_inciso2_disabled'             => env('AB_INCISO2_DISABLE_MESSAGE','A solicitação deste benefício será lançada em breve. Acompanhe a divulgação pelas instituições responsáveis pela gestão da cultura em seu município!'),
-                    'inciso1_opportunity_id'           => 3,
+                    'inciso1_opportunity_id'           => <id_oportunidade_Inc_I>,
                     'inciso2_opportunity_ids'          => [
                                             "<Cidade-1>" => <id-oportunidade-x>,
                                             "<Cidade-2>" => <id-oportunidade-y>,
