@@ -5,8 +5,6 @@ return array_merge($config,
         /* ==================== LOGS ================== */
         'slim.debug'           => false,
         'slim.log.enabled'     => true,
-        'slim.log.level'       => \Slim\Log::DEBUG,
-        'app.log.hook'         => true,
-        #'slim.log.writer'      => new \MapasCulturais\Loggers\File(function () {return 'slim.log'; }),
+        'slim.log.level'       => \Slim\Log::DEBUG      // controla o nível de LOG: DEBUG ou ERROR
     ]
 );
