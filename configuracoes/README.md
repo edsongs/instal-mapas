@@ -7,7 +7,7 @@
 Para habilitar o novo plugin que implementa as funcionalidades de **login e registro local**, assim como a facilidade de **recuperação de senha** pelo envio de link para a redefinição da senha ao e-mail público cadastrado do ente, siga os seguintes passos:
 
 1. Quanto a base para a instalação:
-    1. Se nova, siga normalmente escolhendo as [instruções mais adequadas](https://github.com/edsongs/instal-mapas/Instalacao.md) até o ponto **_imediatamente anterior_** à clonagem do repositório do Mapas Culturais (isto vai garantir que a última versão de desenvolvimento deste _branch_ seja instalada). Vá para o ponto 2.i;
+    1. Se nova, siga normalmente escolhendo as [instruções mais adequadas](https://github.com/edsongs/instal-mapas/blob/master/Instalacao.md) até o ponto **_imediatamente anterior_** à clonagem do repositório do Mapas Culturais (isto vai garantir que a última versão de desenvolvimento deste _branch_ seja instalada). Vá para o ponto 2.i;
     2. Se existente e se deseje atualizar o código da plataforma, siga ao passo 2.ii;
     3. Se existente, sem que seja feita a atualização do código da plataforma, siga ao passo 3;
   
