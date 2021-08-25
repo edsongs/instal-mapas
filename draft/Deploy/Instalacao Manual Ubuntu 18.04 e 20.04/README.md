@@ -320,7 +320,11 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ubuntu@server$ sudo rm /etc/nginx/sites-enabled/default
   ```
   
-  #### Configurações pool do php7.2-fpm: Crie o arquivo ```/etc/php/7.2/fpm/pool.d/mapas.conf```. Muita atenção na alteração da linha ```listen = /var/run/php/php7.2-fpm-meu.dominio.gov.br.sock``` pois o nome do arquivo .sock precisará ser extamente como foi configurado do arquivo ```/etc/nginx/sites-available/mapas.conf```. O diretório ```/var/run/php/``` podrá mudar dependendo da versão que estiver trabalhando. 
+  #### Configurações pool do php7.2-fpm:
+  
+  Crie o arquivo ```/etc/php/7.2/fpm/pool.d/mapas.conf```.
+  Muita atenção na alteração da linha ```listen = /var/run/php/php7.2-fpm-meu.dominio.gov.br.sock``` pois o nome do arquivo _.sock_ precisará ser exatamente como foi configurado do arquivo ```/etc/nginx/sites-available/mapas.conf```.
+  O diretório ```/var/run/php/``` poderá mudar dependendo da versão que estiver trabalhando. 
   
   ```
   ubuntu@server$ sudo vi /etc/php/7.2/fpm/pool.d/mapas.conf
