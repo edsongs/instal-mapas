@@ -34,16 +34,16 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ```
   ubuntu@server$ sudo apt-get install npm -y
   ```
-  Obs: Caso o NPM não instale, pode estar faltando fonte de instalação. Para resolver acesse [aqui](https://github.com/nodesource/distributions#debinstall).
+  _Obs: Caso o NPM não instale, pode estar faltando fonte de instalação. Para resolver acesse [aqui](https://github.com/nodesource/distributions#debinstall).
   
   #### Instale o RUBY:
   
   ```
   ubuntu@server$ sudo apt-get install ruby ruby-dev -y
   ```
-  Obs: Caso o NPM não instale, pode estar faltando fonte de instalação. Para resolver acesse [aqui](https://github.com/nodesource/distributions#debinstall).
+  _Obs: Caso o NPM não instale, pode estar faltando fonte de instalação. Para resolver acesse [aqui](https://github.com/nodesource/distributions#debinstall).
   
-  ####  Atualizar referências para a versão de ruby:
+  ####  Atualizar referências para a versão de ruby (substitua ".x" pela versão instalada):
   
   ```
   ubuntu@server$ sudo update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby2.x 10
@@ -51,7 +51,7 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ```
   ubuntu@server$ sudo update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.x 10
   ```
-  _Nota: O comando update-alternatives --install precisa das informações <link> <name> <path> <priority>_
+  _Obs: O comando update-alternatives --install precisa das informações <link> <name> <path> <priority>_
   
   #### Instale a versão stable mais nova do nodejs:
   
