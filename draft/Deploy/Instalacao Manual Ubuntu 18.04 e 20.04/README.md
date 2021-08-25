@@ -26,8 +26,22 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   #### Instale as dependências diversas:
   
   ```
-  ubuntu@server$ sudo apt-get install git curl npm ruby ruby-dev -y
+  ubuntu@server$ sudo apt-get install git curl -y
   ```
+  
+  #### Instale o NPM:
+  
+  ```
+  ubuntu@server$ sudo apt-get install npm -y
+  ```
+  Obs: Caso o NPM não instale, pode estar faltando fonte de instalação. Para resolver acesse [aqui](https://github.com/nodesource/distributions#debinstall).
+  
+  #### Instale o RUBY:
+  
+  ```
+  ubuntu@server$ sudo apt-get install ruby ruby-dev -y
+  ```
+  Obs: Caso o NPM não instale, pode estar faltando fonte de instalação. Para resolver acesse [aqui](https://github.com/nodesource/distributions#debinstall).
   
   ####  Atualizar referências para a versão de ruby:
   
