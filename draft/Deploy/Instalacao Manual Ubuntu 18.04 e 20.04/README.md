@@ -34,14 +34,14 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ```
   ubuntu@server$ sudo apt-get install npm -y
   ```
-  _Obs: Caso o NPM não instale, pode estar faltando fonte de instalação. Para resolver acesse [aqui](https://github.com/nodesource/distributions#debinstall).
+  _Obs: Caso o NPM não instale, pode estar faltando fonte de instalação. Para resolver acesse [aqui](https://github.com/nodesource/distributions#debinstall)._
   
   #### Instale o RUBY:
   
   ```
   ubuntu@server$ sudo apt-get install ruby ruby-dev -y
   ```
-  _Obs: Caso o NPM não instale, pode estar faltando fonte de instalação. Para resolver acesse [aqui](https://github.com/nodesource/distributions#debinstall).
+  _Obs: Caso o NPM não instale, pode estar faltando fonte de instalação. Para resolver acesse [aqui](https://github.com/nodesource/distributions#debinstall)._
   
   ####  Atualizar referências para a versão de ruby (substitua ".x" pela versão instalada):
   
