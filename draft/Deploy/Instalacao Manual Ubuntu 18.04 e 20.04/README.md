@@ -88,6 +88,8 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ```
   ####  Instale o postgresql e postgis: 
   
+  Por padrão a plataforma solicita a versão 10, porém pode ser utilizada versão mais recente, sem prejuízo funcional. Para adicionar o repositório use [estas instruções](https://computingforgeeks.com/install-postgresql-12-on-ubuntu/).
+  
   _Ubuntu18.04_
   
   ```
