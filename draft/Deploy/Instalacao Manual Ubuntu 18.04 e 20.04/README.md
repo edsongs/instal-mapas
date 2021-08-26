@@ -114,7 +114,7 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   _Ubuntu20.04 e Ubuntu18.04_
   
   ```
-  ubuntu@server$ sudo apt-get install php7.2 php7.2-mbstring php7.2-xml php7.2-gd php7.2-cli php7.2-json php7.2-curl php7.2-pgsql php-apcu php7.2-fpm imagemagick libmagickcore-dev libmagickwand-dev php7.2-imagick -y
+  .ubuntu@server$ sudo apt-get install php7.2 php7.2-mbstring php7.2-xml php7.2-gd php7.2-cli php7.2-json php7.2-curl php7.2-pgsql php7.2-apcu php7.2-fpm imagemagick libmagickcore-dev libmagickwand-dev php7.2-imagick -y
   ```
   
   #### Instale o nginx
@@ -124,11 +124,15 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ```
   
   #### Instale o gerenciador de dependências do PHP Composer
-  
+    
   ```
   ubuntu@server$ curl -sS https://getcomposer.org/installer | php
   ```
-  
+  Por questões de compatibilidade, a última versão suportada é a 1.10.22. Portanto, para ter a versão correta, execute:
+  ```
+  ubuntu@server$ php composer.phar self-update 1.10.22
+  ```
+  Agora mova-o para um diretório de acesso público:
   ```
   ubuntu@server$ sudo mv composer.phar /usr/local/bin/composer.phar
   ```
