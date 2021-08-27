@@ -158,7 +158,7 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ubuntu@server$ sudo npm install -g uglify-js2 uglifycss autoprefixer
   ubuntu@server$ sudo update-alternatives --install /usr/bin/uglifyjs uglifyjs /usr/bin/uglifyjs2 10
   ```
-  _Nota: Ao executar o "npm" pela primeira vez, pode ser que ele informe que há atualizações. Havendo, apliqueas._
+  _Nota: Ao executar o "npm" pela primeira vez, pode ser que ele informe que há atualizações. Havendo, aplique-as._
   
   #### Instalando o SASS, utilizado para compilar os arquivos CSS:
   
