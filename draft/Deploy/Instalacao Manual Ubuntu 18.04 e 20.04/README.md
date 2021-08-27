@@ -183,8 +183,8 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   
   ```
   mapas@server$ cd mapasculturais
-  mapas@server$ git checkout master
-  mapas@server$ git pull origin master
+  mapas@server$ git checkout develop
+  mapas@server$ git pull origin develop
   ```
   
   #### Agora vamos instalar as dependências de PHP utilizando o Composer.
