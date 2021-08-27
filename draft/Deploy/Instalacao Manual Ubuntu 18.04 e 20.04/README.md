@@ -503,7 +503,7 @@ _Em uma das máquinas que fiz a instalação precisei reiniciar o serivdor intei
   #### Após nos certificarmos de que estamos no diretório correto iremos clonar o repositório MultipleLocalAuth
   
   ```
-  mapas@server$ git clone https://github.com/secultce/MultipleLocalAuth.git
+  mapas@server$ git clone https://github.com/mapasculturais/plugin-MultipleLocalAuth.git
   mapas@server$ exit
   mapas@server$
   ```
