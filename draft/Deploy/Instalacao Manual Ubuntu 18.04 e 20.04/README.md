@@ -51,15 +51,12 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ```
   ubuntu@server$ sudo update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.x 10
   ```
-  _Obs: O comando update-alternatives --install precisa das informações <link> <name> <path> <priority>_
+  _Obs: O comando ```update-alternatives --install``` precisa das informações <link> <name> <path> <priority>_
   
   #### Instale a versão stable mais nova do nodejs:
   
   ```
-  ubuntu@server$ sudo curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
-  ```
-  ```
-  ubuntu@server$ sudo bash nodesource_setup.sh
+  ubuntu@server$ sudo curl -sL https://deb.nodesource.com/setup_current.x | sudo -E bash -
   ```
   ```
   ubuntu@server$ sudo apt install nodejs -y
@@ -71,11 +68,12 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   
   ```
   ubuntu@server$ nodejs -v 
-  ~ v12.18.3
+  ~ v16.8.0
   ```
   ```
   ubuntu@server$ npm -v
-  ~ 6.14.6
+  ~ 7.21.0
+  _Nota: Em 25/08/21, as versões "correntes" eram a 16.8.0 e 7.21.0, respectivamente._
   ```
   _Ubuntu20.04_
   ```
@@ -88,13 +86,14 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ```
   ####  Instale o postgresql e postgis: 
   
-  Por padrão a plataforma solicita a versão 10, porém pode ser utilizada versão mais recente, sem prejuízo funcional. Para adicionar o repositório use [estas instruções](https://computingforgeeks.com/install-postgresql-12-on-ubuntu/).
+  Por padrão a plataforma solicita a versão 10, porém pode ser utilizada versão mais recente, sem prejuízo funcional. Para adicionar o repositório use [estas instruções](https://www.postgresql.org/download/linux/ubuntu/).
   
   _Ubuntu18.04_
   
   ```
   ubuntu@server$ sudo apt-get install postgresql-10 postgresql-contrib postgis postgresql-10-postgis-2.4 postgresql-10-postgis-2.4-scripts -y
   ```
+  _Em 25/08/2021 estavam disponíveis o PostgreSQL 13 e o PostGis 2.5; Para istalar estas versões usar: "sudo apt-get install postgresql-13 postgresql-contrib postgis postgresql-13-postgis-2.5 postgresql-13-postgis-2.5-scripts -y"_
   
    _Ubuntu20.04_
   
@@ -128,7 +127,7 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ```
   ubuntu@server$ curl -sS https://getcomposer.org/installer | php
   ```
-  Por questões de compatibilidade, a última versão suportada é a 1.10.22. Portanto, para ter a versão correta, execute:
+  _Nota: Por questões de compatibilidade, a última versão suportada é a 1.10.22. Portanto, para ter a versão correta, execute:_
   ```
   ubuntu@server$ php composer.phar self-update 1.10.22
   ```
@@ -159,6 +158,7 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ubuntu@server$ sudo npm install -g uglify-js2 uglifycss autoprefixer
   ubuntu@server$ sudo update-alternatives --install /usr/bin/uglifyjs uglifyjs /usr/bin/uglifyjs2 10
   ```
+  _Nota: Ao executar o "npm" pela primeira vez, pode ser que ele informe que há atualizações. Havendo, apliqueas._
   
   #### Instalando o SASS, utilizado para compilar os arquivos CSS:
   
@@ -227,6 +227,8 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   ubuntu@server$ sudo su - mapas
   mapas@server$ psql -f mapasculturais/db/schema.sql
   ```
+  _Nota: Caso vc esteja migrando ou clonando um servidor, substitua "mapasculturais/db/schema.sql" pelo arquivo que contêm o dump (pg_dump) do Banco de Dados replicado._
+  
 # 5. Configurações de instalação
   
   #### Primeiro crie um arquivo de configuração copiando o arquivo de template de configuração. Este arquivo está preparado para funcionar com este guia, utilizando o método de autenticação Fake.
@@ -238,7 +240,7 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   #### Criando diretórios de log, files e estilo
   
   ```
-  $ exit
+  mapas@server$ exit
   ubuntu@server$ sudo mkdir /var/log/mapasculturais
   ubuntu@server$ sudo chown mapas:www-data /var/log/mapasculturais
   ```
