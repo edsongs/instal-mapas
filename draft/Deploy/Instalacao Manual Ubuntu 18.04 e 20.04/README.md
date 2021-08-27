@@ -152,11 +152,10 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   
    _Ubuntu20.04 e Ubuntu18.04_
    
-  #### Instalando os minificadores de código Javascript e CSS: uglify-js, uglifycss e autoprefixer:
+  #### Instalando os minificadores de código Javascript e CSS: terser, uglifycss e autoprefixer:
   
   ```
-  ubuntu@server$ sudo npm install -g uglify-js2 uglifycss autoprefixer
-  ubuntu@server$ sudo update-alternatives --install /usr/bin/uglifyjs uglifyjs /usr/bin/uglifyjs2 10
+  ubuntu@server$ sudo npm install -g terser uglifycss autoprefixer
   ```
   _Nota: Ao executar o "npm" pela primeira vez, pode ser que ele informe que há atualizações. Havendo, aplique-as._
   
