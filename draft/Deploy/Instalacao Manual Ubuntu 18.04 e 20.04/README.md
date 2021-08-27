@@ -369,8 +369,6 @@ php_admin_value[display_errors] = 'stderr'
   ```
   ubuntu@server$ sudo su - mapas
   mapas@server$ psql -f mapasculturais/db/initial-data.sql
-  ```
-  ```
   mapas@server$ ./mapasculturais/scripts/deploy.sh
   mapas@server$ exit
   ```
