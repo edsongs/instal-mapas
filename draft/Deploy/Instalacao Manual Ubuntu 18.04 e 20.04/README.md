@@ -177,7 +177,7 @@ Esta instalação foi testada em uma VM criada na plataforma AWS.
   
   ```
   ubuntu@server$ sudo su - mapas
-  mapas@server$ git clone https://github.com/hacklabr/mapasculturais.git
+  mapas@server$ git clone https://github.com/mapasculturais/mapasculturais.git
   ```
   #### Agora vamos colocar o repositório na branch master. Caso queira você poderá ver todas as versões dosponíveis [aqui](https://github.com/hacklabr/mapasculturais/releases)
   
@@ -364,10 +364,13 @@ php_admin_value[display_errors] = 'stderr'
   
   #### Para finalizar, precisamos popular o banco de dados com os dados iniciais e executar um script que entre outras coisas compila e minifica os assets, otimiza o autoload de classes do composer e roda atualizações do banco.
   
-  
+  _Nota: Caso vc tenha usado um "dump" de outro banco de dados, então o banco já tem os dados iniciais e pule o comando "psql -f mapasculturais/db/initial-data.sql"._
+
   ```
   ubuntu@server$ sudo su - mapas
   mapas@server$ psql -f mapasculturais/db/initial-data.sql
+  ```
+  ```
   mapas@server$ ./mapasculturais/scripts/deploy.sh
   mapas@server$ exit
   ```
