@@ -51,7 +51,7 @@ instaladores(){
 atualizaRef(){
   sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
   wait
-  sudo npm install -g uglify-js2 uglifycss autoprefixer
+  sudo npm install -g terser uglifycss autoprefixer
   wait
   sudo update-alternatives --install /usr/bin/uglifyjs uglifyjs /usr/bin/uglifyjs2 10
   wait
@@ -67,7 +67,7 @@ atualizaRef(){
 clonaRep(){
   sudo useradd -G www-data -d /srv/mapas -m mapas
   wait
-  sudo runuser -l mapas -c "git clone https://github.com/mapasculturais/mapasculturais-aldirblanc.git"
+  sudo runuser -l mapas -c "git clone https://github.com/mapasculturais/mapasculturais.git"
   wait
   sudo runuser -l mapas -c "cd mapasculturais"
   wait
